@@ -48,7 +48,7 @@ d3.csv("2016-2017-Bees.csv", prepare, function(data)
   svg.call(toolTip);
 
   var circle = gEnter.append("circle")
-                     .attr("r", 9)
+                     .attr("r", 15)
                      .attr("stroke","blue")
                      .attr("fill", "purple")
                      .on("mouseover", toolTip.show)
