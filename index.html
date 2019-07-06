@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ <head>
+  <meta charset="utf-8">
+  <title>Declining Bee Populations</title>
+  <link rel="stylesheet" type="text/css" href="BootStrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"/>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+ </head>
+
+
+ <body>
+ <div class="jumbotron">
+  <h1>Tracking the Decline in Bee Population by State (2016-2017)</h1>
+  <p>Data courtesy of <a href="https://bip2.beeinformed.org/loss-map/">Bee Informed Partnership</a></p>
+  <p>The Bee Informed Partnership collects data from beekeepers and researchers through manual and automatic hive monitoring, and provides data to the general public. </p>
+  <p>The Bee Informed Partnership is sponsored in part by the USDA and Project APIS M.</p>
+  <div class="controls">
+   <input id="logCheckbox" type="checkbox" value="logscale"></input>
+   <label for="logscale">Toggle Log Scale View</label>
+   <br/>This expands and compresses the view to demonstrate the full range and context.
+  </div>
+  <div id="chart"></div>
+ </div>
+ <div class="row text-center">
+  <div class="col-sm-4 col-sm-4 mb-4">
+   <div class="card h-50">
+    <div class="card-body">
+     <img class="card-img-top" src="https://beeinformed.org/wp-content/uploads/2014/04/queen_home_page.png" alt="Beehive">
+    </div>
+    <div class="card-footer">
+    </div>
+   </div>
+  </div>
+  <div class="col-sm-4 col-sm-4 mb-4">
+   <div class="card h-50">
+    <div class="card-body">
+     <img class="card-img-top" src="https://beeinformed.org/wp-content/uploads/2019/06/SentinelLogoPNG-e1561650010400-300x294.png" alt="Bee Informed logo" height="275px" width="250px" >
+    </div>
+    <div class="card-footer">
+ 	 <a href="https://bip2.beeinformed.org/" class="btn btn-primary">Visit the Bee Informed Partnership</a>
+ 	</div>
+   </div>
+  </div>
+  <div class="col-sm-4 col-sm-4 mb-4">
+   <div class="card h-50">
+    <div class="card-body">
+     <img src="static/images/bee_pic.jpg" alt="Picture of Bee with Flower" height = "200" width = "275">
+    </div>
+    <div class="card-footer">
+    </div>
+   </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="app.js"></script>
+ </body>
+</html>
